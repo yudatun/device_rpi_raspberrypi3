@@ -25,4 +25,7 @@ PRODUCT_PACKAGES += \
     cmdline.txt \
     config.txt
 
+PRODUCT_PACKAGES += fstab.bcm
+PRODUCT_PACKAGES += debuggerd
+
 include vendor/raspberrypi/firmware/products.mk
