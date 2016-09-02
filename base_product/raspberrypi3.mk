@@ -29,4 +29,10 @@ PRODUCT_PACKAGES += fstab.bcm
 PRODUCT_PACKAGES += debuggerd
 PRODUCT_PACKAGES += dump_syms
 
+PRODUCT_PACKAGES += \
+    sshd \
+    ssh-keygen \
+    sshd_config.android \
+    start-ssh
+
 include vendor/raspberrypi/firmware/products.mk
