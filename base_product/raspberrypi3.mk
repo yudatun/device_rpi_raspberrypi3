@@ -27,5 +27,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += fstab.bcm
 PRODUCT_PACKAGES += debuggerd
+PRODUCT_PACKAGES += dump_syms
 
 include vendor/raspberrypi/firmware/products.mk
