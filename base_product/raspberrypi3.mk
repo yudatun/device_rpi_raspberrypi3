@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += dump_syms
 PRODUCT_PACKAGES += \
     sshd \
     ssh-keygen \
-    sshd_config.android \
+    sshd_config \
     start-ssh
 
 include vendor/raspberrypi/firmware/products.mk
