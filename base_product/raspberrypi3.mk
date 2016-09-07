@@ -35,4 +35,7 @@ PRODUCT_PACKAGES += \
     sshd_config \
     start-ssh
 
+PRODUCT_COPY_FILES += \
+  device/rpi/raspberrypi3/base_product/weaved.conf:system/etc/weaved/weaved.conf
+
 include vendor/raspberrypi/firmware/products.mk
