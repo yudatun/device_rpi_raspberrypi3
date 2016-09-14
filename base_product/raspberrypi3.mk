@@ -39,3 +39,9 @@ PRODUCT_COPY_FILES += \
   device/rpi/raspberrypi3/base_product/weaved.conf:system/etc/weaved/weaved.conf
 
 include vendor/raspberrypi/firmware/products.mk
+
+# logd for write to /data/misc/logd
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd.enable=true
+  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd=logcatd
+endif
