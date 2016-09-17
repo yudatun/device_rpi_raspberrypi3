@@ -23,7 +23,7 @@
 $(call set_soc, bcm, bcm2837)
 
 # Add wifi controlller
-$(call add_peripheral, bcm, wifi/rtl8xxxu)
+$(call add_peripheral, bcm, wifi/bcm43438)
 
 include device/rpi/raspberrypi-common/BoardConfig.mk
 
