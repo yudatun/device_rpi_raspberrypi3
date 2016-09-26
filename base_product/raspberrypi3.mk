@@ -29,11 +29,7 @@ PRODUCT_PACKAGES += fstab.bcm
 PRODUCT_PACKAGES += debuggerd
 PRODUCT_PACKAGES += dump_syms
 
-PRODUCT_PACKAGES += \
-    sshd \
-    ssh-keygen \
-    sshd_config \
-    start-ssh
+PRODUCT_PACKAGES += gpio-rpi
 
 PRODUCT_COPY_FILES += \
   device/rpi/raspberrypi3/base_product/weaved.conf:system/etc/weaved/weaved.conf
