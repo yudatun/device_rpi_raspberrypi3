@@ -36,8 +36,10 @@ PRODUCT_COPY_FILES += \
 
 include vendor/raspberrypi/firmware/products.mk
 
+########################################
+
 # logd for write to /data/misc/logd
-ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
-  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd.enable=true
-  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd=logcatd
-endif
+#ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+#  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd.enable=true
+#  ADDITIONAL_BUILD_PROPERTIES += logd.logpersistd=logcatd
+#endif
