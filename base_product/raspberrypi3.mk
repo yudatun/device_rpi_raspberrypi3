@@ -21,15 +21,8 @@ PRODUCT_BRAND := Brillo
 
 PRODUCT_DEVICE := raspberrypi3
 
-PRODUCT_PACKAGES += \
-    cmdline.txt \
-    config.txt
-
-PRODUCT_PACKAGES += fstab.bcm
-PRODUCT_PACKAGES += debuggerd
-PRODUCT_PACKAGES += dump_syms
-
-PRODUCT_PACKAGES += gpio-rpi
+########################################
+include device/rpi/raspberrypi-common/raspberrypi.mk
 
 PRODUCT_COPY_FILES += \
   device/rpi/raspberrypi3/base_product/weaved.conf:system/etc/weaved/weaved.conf
