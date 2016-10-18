@@ -30,3 +30,7 @@ include device/rpi/raspberrypi-common/BoardConfig.mk
 TARGET_BOARD_PLATFORM := bcm2837
 TARGET_BOOTLOADER_BOARD_NAME := bcm2837
 TARGET_BOARD_INFO_FILE := device/rpi/raspberrypi3/board-info.txt
+
+# Enable bluetooth
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rpi/raspberrypi3/bluetooth
