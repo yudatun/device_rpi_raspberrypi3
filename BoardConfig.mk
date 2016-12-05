@@ -32,3 +32,6 @@ include device/rpi/raspberrypi-common/BoardConfig.mk
 TARGET_BOARD_PLATFORM := bcm2837
 TARGET_BOOTLOADER_BOARD_NAME := bcm2837
 TARGET_BOARD_INFO_FILE := device/rpi/raspberrypi3/board-info.txt
+
+# Must be defined at the end of the file
+$(call add_device_packages)
